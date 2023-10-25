@@ -1,0 +1,123 @@
+<!DOCTPYE html>
+<html>
+
+<head>
+	<title> USC Movie Night Order Form</title>
+
+<style>
+	.header{
+		margin: 20px;
+		color: #990000;
+	}
+
+	.form-row{
+		margin:20px;
+		clear:both;
+	}
+
+	.name-label{
+		width: 200px;
+		font-weight:bold;
+		float:left;
+	}
+
+	#order-btn{
+		background-color:goldenrod;
+		color:white;
+	}
+
+
+</style>
+
+</head>
+
+<body>
+	<div class = "header">
+
+	<h1>USC Movie Night Order Form</h1>
+	<img src = "https://www.uscannenbergmedia.com/resizer/DWipNK-5MorXrkwBevFQvsfT6_8=/arc-anglerfish-arc2-prod-uscannenberg/public/JWAV6UNRFBF2RGXYA47IA32VGA.jpg" width= 300px/>
+
+	</div>
+
+	<form action="confirm.html">
+		<div class="form-row">
+			<label class ="name-label" for ="first-name">First Name:</label>
+			<input id="firstname" type="text" placeholder="Daniel" required />
+		</div>
+
+		<div class="form-row">
+			<label class ="name-label" for ="last-name">Last Name:</label>
+			<input id="lastname" type="text" placeholder="Muller" required />
+		</div>
+
+		<div class="form-row">
+			<label class ="name-label" for ="email">Email:</label>
+			<input id="email" type="email" placeholder="abc@gmail.com" required />
+		</div>
+
+		<div class="form-row">
+			<label class ="name-label" for ="phone">Phone Number:</label>
+			<input id="phone" type="phone" placeholder="(213)XXX-XXXX" required />
+		</div>
+
+		<div class="form-row">
+			<label class= "name-label">Available Movies:</label>
+
+			<input id="Harry Potter" type ="radio" name="movie" value="Harry Potter" />
+			<label for = "Harry Potter"> Harry Potter($5)</label>
+
+			<input id="Oppenheimer" type ="radio" name="movie" value="Oppenheimer" />
+			<label for = "Oppenheimer"> Oppenheimer($13)</label>
+
+			<input id="Barbie" type ="radio" name="movie" value="Barbie" />
+			<label for = "Barbie"> Barbie($9)</label>
+		</div>
+
+		<div class ="form-row">
+			<label class= "name-label">Seat Preference:</label>
+
+			<input id="eastA" type="checkbox" value="eastA" />
+			<label for ="eastA"> East-A </label>
+
+			<input id="eastB" type="checkbox" value="eastB" />
+			<label for ="eastB"> East-B </label>
+
+			<input id="westA" type="checkbox" value="westA" />
+			<label for ="westA"> West-A </label>
+
+			<input id="westb" type="checkbox" value="westB" />
+			<label for ="westb"> West-B </label>
+		</div>
+
+		<div class ="form-row">
+
+			<label class ="name-label" for="quantity">Quantity: </label>
+			<select id ="quantity">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+		</div>
+
+		<div class ="form-row">
+			<label class="name-label" for="comments">Comments:</label>
+			<textarea id="comments" placeholder="Write something. . . " required></textarea>
+		</div>
+
+		<div class ="form-row">
+		<input id="terms" type="checkbox" value="terms" required />
+		<label for="terms"> I accept the terms and conditions</label>
+		</div>
+
+		<div class = "form-row">
+			<button id="order-btn" type="order">Order</button>
+			<button id="reset" type="reset">Reset</button>
+		</div>
+	</form>
+
+
+
+</body>
+</html>

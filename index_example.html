@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Joanna's Baking Blog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Patrick';
+  src: url('PatrickHand-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Patrick' , Arial, sans-serif;
+}
+
+/* Style the header */
+.header {
+  background-image: url("https://wallpapers.com/images/hd/bakery-aesthetic-pattern-7749w77qxvlj3cza.jpg");
+  background-size: 45%; 
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #5e1e00;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #BE9D78;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #BE9D78;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Joanna's Baking Blog &#129384;</h1>
+  <p>&#129360; Croissant Enthusiast &#129360;</p>
+</div>
+
+<div class="topnav">
+  <a href="index_example.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="resume.html">Resume</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>About Me</h2>
+    <img src ="https://images.template.net/80792/Free-Cooking-Illustration--JPG--1.jpg" width = 80%;/>
+    <p>When it comes to baking, there are things I consider kitchen essentials and things I consider kitchen luxuries.  Somehow, because I’m me, those lists have merged as the luxury tools become more essential than not.  What can I say, I settle into comforts really well.  I’m sure you do, too – so read this list with caution.   Last week we talked about the Parchment Paper Sheets I can’t live without but here’s a more complete list of the easy elite splurges that keep me happy in the kitchen everyday!</p>
+  </div>
+  
+  <div class="column middle">
+    <h2>Lab/Projects</h2>
+    <p>My iANT Web Development Labs & Projects!</p>
+    <ul>
+      <li><a href= "lab1.html" target ="_blank">Lab 01: Basic Html Page</a></li>
+      <li><a href= "lab2.html" target ="_blank">Lab 02: Table and Basic CSS</a></li>
+      <li><a href= "lab3.html" target ="_blank">Lab 03: Basic Form</a></li>
+      <li><a href= "index_example.html" target ="_blank">Lab 04: Create a Website</a></li>
+
+    </ul>
+    
+  </div>
+  
+  <div class="column side">
+    <h2>Contact Me</h2>
+    <h4>Email:</h4>
+    <p>joannabaking@gmail.com</p>
+    <h4>LinkedIn:</h4>
+    <p>linkedin/1234bakingfun</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Created by Joanna Yoo Oct, 2023</p>
+</div>
+  
+</body>
+</html>
+
+
